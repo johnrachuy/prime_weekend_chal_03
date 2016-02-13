@@ -1,0 +1,39 @@
+#operators {
+    display: inline;
+}
+
+.operation {
+    background-color: #b0b0b0;
+    display: inline;
+    float: left;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-align: center;
+    border: 2px solid black;
+    cursor: default;
+}
+
+.operation:hover {
+    background-color: #f60;
+    color: white;
+}
+
+#total {
+    display: block;
+    font-size: 35px;
+}
+
+#clear{background-color: #b0b0b0;
+    display: inline;
+    float: left;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-align: center;
+    width: 100px;
+    cursor: default;
+}
