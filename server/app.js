@@ -6,7 +6,7 @@ var calculate = require('./routes/calculate');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.set('port', process.env.PORT);
+app.set('port', process.env.PORT || 5000);
 
 app.post('/calculate', function(req,res){
     var total = {};
