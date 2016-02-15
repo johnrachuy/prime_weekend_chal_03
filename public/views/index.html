@@ -2,26 +2,33 @@
 <html>
 <head>
     <title>Calculator</title>
+
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"/>
     <script type="text/javascript" src="vendors/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 
 <body>
-<form id="inputForm">
-    <span>Number 1: </span><input type="text" name="numOne">
-    <span>Number 2: </span><input type="text" name="numTwo">
-</form>
-<div id="operators">
-    <div class="operation" data-type="add">+</div>
-    <div class="operation" data-type="subtract">-</div>
-    <div class="operation" data-type="multiply">&times;</div>
-    <div class="operation" data-type="divide">&divide;</div>
-</div>
-<div id="total"><h2>Total:</h2>
+    <form id="inputForm">
+        <input class="box" type="text" name="numOne" placeholder="number 1">
+        <br>
+        <input class="box" type="text" name="numTwo" placeholder="number 2">
+    </form>
+    <div id="operators">
+        <div class="calc-row">
+            <div class="operation" data-type="add">+</div>
+            <div class="operation" data-type="subtract">-</div>
+        </div>
+        <div class="calc-row">
+            <div class="operation" data-type="multiply">&times;</div>
+            <div class="operation" data-type="divide">&divide;</div>
+        </div>
+    </div>
+<div id="total">Total:
     <span></span>
 </div>
-<div id="clear">Clear All</div>
+<div id="clear">Clear</div>
+</div>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
 var values = {};
 
 $(document).ready(function(){
-    $('#operators').on('click', '.operation', clickMagic);
+    $('#operators').on('click', '.operation', opClick);
     $('#clear').on('click', clearTotal);
 });
 
-function clickMagic() {
+function opClick() {
     event.preventDefault();
     values.type = this.dataset.type;
     $.each($('form').serializeArray(), function(i,field){
